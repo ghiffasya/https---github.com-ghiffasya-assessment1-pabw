@@ -41,6 +41,16 @@
                 alert("Masukkan jumlah buku!");
                 return;
             }
+
+            for (let i = 0; i < buku.length; i++) {
+                if (buku[i].nama === bukuSelected) {
+                    found = true;
+                    if (parseInt(jumlah) > buku[i].jumlah){
+                        alert("Jumlah buku tidak tersedia!");
+                    } 
+                    break;
+                }
+            }
             if (!found){
                 alert("Buku tidak ditemukan!");
             }
