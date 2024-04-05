@@ -36,6 +36,11 @@
             let jumlah = document.getElementById("jumlah").value;
             let bukuSelected = document.getElementById("buku").value;
             let found = false;
+
+            if (jumlah === "") {
+                alert("Masukkan jumlah buku!");
+                return;
+            }
         }
     </script>
 </body>
